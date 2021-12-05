@@ -10,13 +10,17 @@ use \fgh151\modules\params\Module;
  * Time: 11:43
  */
 ?>
-<?php $form = ActiveForm::begin();?>
+<div class="app_params_settings-main-index">
 
-<h1><?=Module::t('app', 'Add param to').' '.$file?></h1>
+  <?php $form = ActiveForm::begin();?>
 
-<?= $form->field($model, 'key');?>
-<?= $form->field($model, 'value');?>
+  <h1><?=Module::t('app', 'Add param to').' '.$file?></h1>
 
-<?=Html::submitButton(Module::t('app','Save'),['class'=>'btn btn-success']);?>
+  <?= $form->field($model, 'key');?>
+  <?= $form->field($model, 'value');?>
 
-<?php ActiveForm::end()?>
+  <?=Html::submitButton(Module::t('app','Save'),['class'=>'btn btn-success']);?>
+
+  <?php ActiveForm::end()?>
+
+</div>
